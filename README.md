@@ -52,6 +52,7 @@ UniFi devices do not natively support Cloudflare as a DDNS provider. This script
    - **Password:** Cloudflare User API Token *(not an Account API Token)*
    - **Server:** `<worker-name>.<worker-subdomain>.workers.dev/update?ip=%i&hostname=%h`
      *(Omit `https://`)*
+     *In case you are behind NAT and would like to update your record using the CF-Connecting-IP, replace the parameter `ip=%i` with `ip=auto`*
 
 ## 🛠️ **Testing & Troubleshooting**
 
